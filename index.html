@@ -5,9 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__logo"><a href="/"><img src="images/header__logo.svg" alt="Логотип Brand"></a></div>
+            <form class="header__search">
+                <div class="header__btnBrowse">
+                    Browse<i class="fas fa-caret-down"></i>
+                </div>
+                <input type="text" placeholder="Search for Item...">
+                <button class="header__btnSearch"><i class="fas fa-search"></i></button>
+            </form>
+            <img class="header__cart" src="images/cart.svg" alt="Корзина">
+            <button class="btn header__account" >
+                My Account<i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
 
 </body>
 </html>
