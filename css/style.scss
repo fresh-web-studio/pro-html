@@ -101,8 +101,10 @@ header {
     cursor: pointer;
   }
   .header__cart {
-    margin-left: auto;
+    width: 1.667vw;
+    height: 1.510vw;
     margin-right: 1.354vw;
+    margin-left: auto;
     cursor: pointer;
   }
 
@@ -127,6 +129,40 @@ nav {
     &:hover {
       color: #fff;
       background-color: #f65168;
+    }
+  }
+}
+main {
+  .promo {
+    height: 31.771vw;
+    background-color: #e8e8e8;
+  }
+  .promo-back {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/promo-back.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 28.646vw;
+    height: inherit;
+  }
+  .promo__text {
+    height: 4.792vw;
+    border-left: 0.625vw solid #f16d7f;
+    padding-left: 0.625vw;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .promo__title {
+    font-size: 3.125vw;
+    line-height: 2.3vw;
+  }
+  .promo__info {
+    font-size: 2.083vw;
+    line-height: 1.667vw;
+    margin-top: 0.9vw;
+    span {
+      color: #f16d7f;
     }
   }
 }
