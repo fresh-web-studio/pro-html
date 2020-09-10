@@ -52,6 +52,9 @@ $red-h: #f65168; //цвет при наведении на кнопки
 .btn i {
   margin-left: 0.417vw;
 }
+.section {
+  padding: 2.344vw 0;
+}
 
 header {
   height: 5.208vw;
@@ -170,9 +173,6 @@ main {
     }
   }
   .category {
-    .section {
-      padding: 4.688vw 0;
-    }
     .category__list {
       display: flex;
       flex-wrap: wrap;
@@ -184,6 +184,7 @@ main {
       margin: 0.781vw;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 28.906vw;
     }
     .category__item:first-child {
       height: 28.229vw;
@@ -218,6 +219,94 @@ main {
       text-transform: uppercase;
     }
   }
+  .feature {
+    .feature__title {
+      font-size: 1.563vw;
+      color: rgb(34, 34, 34);
+      text-align: center;
+    }
+    .feature__info {
+      font-size: 0.729vw;
+      color: rgb(159, 159, 159);
+      text-align: center;
+    }
+    .feature__list {
+      margin-top: 2.083vw;
+      margin-bottom: 3.125vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .feature__item {
+      width: ($con-width / 4) - (0.781vw * 2);
+      margin: 1.042vw 0.781vw;
+      height: 19.271vw;
+    }
+    .feature__item:hover {
+      box-shadow: 0 0.260vw 0.417vw 0 rgba(0, 0, 0, 0.16);
+    }
 
+    .feature__img-button {
+      height: 14.583vw;
+      position: relative;
+    }
+    .feature__photo {
+      width: 100%;
+      display: block;
+      height: inherit;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .feature__bay-button {
+      height: inherit;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      position: absolute;
+      cursor: pointer;
+    }
+    .feature__item:hover .feature__bay-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .feature__bay {
+      padding: 0.781vw;
+      border: 0.052vw solid #ffffff;
+      background: none;
+      color: #fff;
+      font-size: 0.677vw;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .feature__bay:hover {
+      background-color: $red-h;
+    }
+    .feature__bay img {
+      margin-right: 0.521vw;
+    }
+    .feature__name-price {
+      padding: 0.781vw;
+    }
+    .feature-name {
+      margin-bottom: 0.781vw;
+      font-size: 0.677vw;
+      color: rgb(34, 34, 34);
+      text-transform: uppercase;
+    }
+    .feature-price {
+      font-size: 0.833vw;
+      color: rgb(241, 109, 127);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .feature-btn {
+      width: 11.042vw;
+      margin: 0 auto;
+    }
+  }
 }
 
