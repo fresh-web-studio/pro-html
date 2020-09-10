@@ -107,4 +107,27 @@ header {
   }
 
 }
+nav {
+  .top-menu__row {
+    height: 2.604vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .top-menu__link {
+    padding: 0.6vw 1.198vw;
+    font-size: 0.729vw;
+    font-weight: bold;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    &:hover {
+      color: #fff;
+      background-color: #f65168;
+    }
+  }
+}
 
