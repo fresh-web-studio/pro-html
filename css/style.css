@@ -55,8 +55,10 @@ header {
     justify-content: space-between;
     align-items: center; }
   header .header__logo {
-    width: 8.594vw;
     margin-right: 1.927vw; }
+  header .header__logo img {
+    width: 8.594vw;
+    height: 2.656vw; }
   header .header__search {
     display: flex;
     justify-content: space-between;

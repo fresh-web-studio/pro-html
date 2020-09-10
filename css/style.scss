@@ -49,7 +49,6 @@ button {
   margin-left: 0.417vw;
 }
 
-
 header {
   height: 5.208vw;
   display: flex;
@@ -61,8 +60,11 @@ header {
     align-items: center;
   }
   .header__logo {
-    width: 8.594vw;
     margin-right: 1.927vw;
+  }
+  .header__logo img {
+    width: 8.594vw;
+    height: 2.656vw;
   }
   .header__search {
     display: flex;
