@@ -26,15 +26,19 @@ button {
   outline: none;
 }
 
+$con-width: 60.938vw; // Ширина базового контейнера
+$red: #f16d7f; // Основной красный цвет
+$red-h: #f65168; //цвет при наведении на кнопки
+
 .container {
-  width: 60.938vw;
+  width: $con-width;
   margin: 0 auto;
 }
 
 .btn {
   border: none;
   padding: 0.6vw 0.990vw;
-  background-color: #f16d7f;
+  background-color: $red;
   font-size: 0.729vw;
   color: #fff;
   display: flex;
@@ -42,7 +46,7 @@ button {
   align-items: center;
   cursor: pointer;
   &:hover {
-    background-color: #f65168;
+    background-color: $red-h;
   }
 }
 .btn i {
@@ -128,7 +132,7 @@ nav {
     text-transform: uppercase;
     &:hover {
       color: #fff;
-      background-color: #f65168;
+      background-color: $red-h;
     }
   }
 }
@@ -136,34 +140,84 @@ main {
   .promo {
     height: 31.771vw;
     background-color: #e8e8e8;
-  }
-  .promo-back {
-    display: flex;
-    align-items: center;
-    background-image: url(../images/promo-back.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 28.646vw;
-    height: inherit;
-  }
-  .promo__text {
-    height: 4.792vw;
-    border-left: 0.625vw solid #f16d7f;
-    padding-left: 0.625vw;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-  .promo__title {
-    font-size: 3.125vw;
-    line-height: 2.3vw;
-  }
-  .promo__info {
-    font-size: 2.083vw;
-    line-height: 1.667vw;
-    margin-top: 0.9vw;
-    span {
-      color: #f16d7f;
+    .promo-back {
+      display: flex;
+      align-items: center;
+      background-image: url(../images/promo-back.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 28.646vw;
+      height: inherit;
+    }
+    .promo__text {
+      height: 4.792vw;
+      border-left: 0.625vw solid $red;
+      padding-left: 0.625vw;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    .promo__title {
+      font-size: 3.125vw;
+      line-height: 2.3vw;
+    }
+    .promo__info {
+      font-size: 2.083vw;
+      line-height: 1.667vw;
+      margin-top: 0.9vw;
+      span {
+        color: #f16d7f;
+      }
     }
   }
+  .category {
+    .section {
+      padding: 4.688vw 0;
+    }
+    .category__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 42.708vw + (0.781vw * 4);
+    }
+    .category__item {
+      width: ($con-width / 2) - (0.781vw * 2);
+      margin: 0.781vw;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .category__item:first-child {
+      height: 28.229vw;
+      background-image: url(../images/category_item1.jpg);
+    }
+    .category__item:nth-child(2) {
+      height: 13.594vw;
+      background-image: url(../images/category_item2.jpg);
+    }
+    .category__item:nth-child(3) {
+      height: 13.594vw;
+      background-image: url(../images/category_item3.jpg);
+    }
+    .category__item:last-child {
+      height: 28.229vw;
+      background-image: url(../images/category_item4.jpg);
+    }
+    .category__badge {
+      margin-top: 1.302vw;
+      padding: 0.833vw 0.833vw;
+      background-color: #fff;
+      display: inline-block;
+    }
+    .category__text {
+      font-size: 0.938vw;
+      color: rgb(34, 34, 34);
+      text-transform: uppercase;
+    }
+    .category__title {
+      font-size: 1.563vw;
+      color: $red;
+      text-transform: uppercase;
+    }
+  }
+
 }
 
